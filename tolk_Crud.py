@@ -12,10 +12,12 @@ def toon_talen_tolk(naam):
     for x in tolken:
         if x.naam == naam:
             x.print_talen()
-def voeg_taal_toe_aan_tolk(naam, taal):
+def voeg_taal_toe_aan_tolk(naam):
      for x in tolken:
         if x.naam == naam:
+            taal = input("geef de taal in")
             x.voeg_taal_toe(taal)
+
 def toon_tolk_taal(taal):
     tolk_taal = []
     for x in tolken:
